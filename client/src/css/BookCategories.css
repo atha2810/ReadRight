@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital@0;1&display=swap");
+
+.urbanist-<urbanist > {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.categories,
+.books {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Add more styles as needed */
+}
+
+.bookleftside {
+  width: 55%;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 26px;
+}
+
+.bookrightside {
+  width: 75%;
+}
+
+.book-item {
+  cursor: pointer;
+  width: 90%;
+  border: 1px solid black;
+  color: black;
+  display: flex;
+  margin-bottom: 20px;
+  background-color: #ffc24b;
+  border-radius: 17px;
+  transition: all 0.3s ease;
+  padding: 20px;
+}
+
+.book-item:hover {
+  transform: scale(1.03);
+}
+
+.bookimg {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookimg img {
+  height: 185px;
+  max-width: 120px;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 7px;
+}
+
+.bookdetails {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  width: 80%;
+}
+
+.booktitle {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.booktitle h3 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 22px;
+}
+
+.bookSubtitle {
+  font-size: 20px;
+  margin: 0;
+}
+
+.author {
+  background-color: #40f39a;
+  border-radius: 17px;
+  border: 1px solid black;
+  padding: 5px 10px;
+  display: inline-block;
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.summary {
+  background-color: lightgreen;
+  font-size: 11px;
+  margin-top: 10px;
+  border: 2px solid black;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.download {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 17px;
+  background-color: royalblue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .bookleftside, .bookrightside {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .book-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bookimg {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .download {
+    width: 100%;
+  }
+}

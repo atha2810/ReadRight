@@ -1,0 +1,63 @@
+/* Reset some default styling */
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  margin: 20px;
+  margin-top: 60px;
+  padding: 20px;
+  border-radius: 17px 17px 17px 17px;
+}
+
+.qtitle {
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.qcategory {
+  margin-right: 10px;
+  width: auto;
+  height: 40px;
+  background-color: #7057d8;
+  border-radius: 17px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 900;
+  transition: all 0.3s ease;
+}
+.boldquestions {
+  border-radius: 17px;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 50px;
+  line-height: 30px;
+}

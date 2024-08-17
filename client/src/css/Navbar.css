@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital@0;1&display=swap");
+
+.urbanist-<urbanist > {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 30px;
+  margin: 10px;
+  margin-top: -5px;
+  background-color: softblack;
+  border-radius: 17px 17px 17px 17px;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.abtus {
+  margin-right: 10px;
+  width: 110px;
+  height: 40px;
+  background-color: #7057d8;
+  border-radius: 17px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 900;
+  transition: all 0.3s ease;
+}
+.credits {
+  margin-right: 10px;
+  width: 110px;
+  height: 40px;
+  background-color: #e83457;
+  border-radius: 17px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 900;
+  transition: all 0.3s ease;
+}
+
+.logout {
+  width: 100px;
+  height: 40px;
+  background-color: #ffb829;
+  border-radius: 17px;
+  color: black;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.abtus:hover {
+  transform: scale(1.03);
+}
+.logout:hover {
+  transform: scale(1.03);
+}
+.user-info {
+  display: flex;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+  }
+
+  .user-info {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}

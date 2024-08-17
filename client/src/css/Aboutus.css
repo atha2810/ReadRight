@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital@0;1&display=swap');
+
+.urbanist-<urbanist> {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.appabt{
+    background-color:black;
+    border-radius:17px;
+    padding:30px;
+    margin:10px;
+}
+
+  .about-container {
+    font-family: Comfortaa, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #ecf0f1;
+  }
+  
+  section {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    background-color: #7057D8;
+    color:black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 55px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .back-button:hover {
+    background-color:#FFB829;
+  }
+  
+  .introduction p, .team p, .contact p {
+    color: #bdc3c7;
+  }
+  
+.key-features {
+    margin-left: 100px;
+    width: 680px;
+}
+
+  .key-features ul {
+    list-style-type: none;
+    
+    background-color:black;
+    border-radius:17px;
+    padding:30px;
+    margin:10px;
+  }
+  
+  .key-features li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    text-align: left;
+  }
+  
+  .team-member {
+   
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+    background-color:black;
+    border-radius:17px;
+    padding:30px;
+    margin:10px;
+  }
+  
+  .team-image {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .social-links {
+    margin-top: 10px;
+  }
+  
+  .social-links a {
+    color: #ecf0f1;
+    margin: 0 10px;
+    font-size: 1.5em;
+  }
+  
+  .social-links a:hover {
+    color: #3498db;
+  }
+
+  .testimonial {
+    display: flex;
+    align-items: center;
+    background-color:black;
+    border-radius:17px;
+    padding:30px;
+    margin:10px;
+  }
+  
+  .testimonial-image {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  blockquote {
+    margin: 0;
+    font-style: italic;
+    color: #ecf0f1;
+    
+  }
+  
+.contact{
+    background-color:black;
+    border-radius:17px;
+    padding:30px;
+    margin:10px;
+}
+
+  .contact a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  
+
+  .call-to-action{
+    
+    padding:30px;
+    margin:10px;
+  }
+  
+  
+  
