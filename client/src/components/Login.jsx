@@ -13,7 +13,7 @@ function Login() {
 
   const handleSubmit = () => {
     axios
-      .post("http://localhost:3000/auth/login", { username, password })
+      .post("https://readright-server.onrender.com/auth/login", { username, password })
       .then(res => {
         if (res.data.user) {
           const role = res.data.role;
