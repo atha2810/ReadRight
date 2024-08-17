@@ -26,7 +26,7 @@ function Dashboard() {
     e.preventDefault();
     const token = Cookies.get("authToken");
     try {
-      const response = await fetch("http://localhost:3000/books", {
+      const response = await fetch("https://readright-server.onrender.com/books", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
