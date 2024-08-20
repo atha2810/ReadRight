@@ -17,7 +17,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://readright-d1jr.onrender.com", // Your frontend origin
+    origin: "https://read-right-8057snk87-atha2810s-projects.vercel.app", // Your frontend origin
     credentials: true, // Allow cookies or credentials
   })
 );
