@@ -26,7 +26,7 @@ function Dashboard() {
     e.preventDefault();
     const token = Cookies.get("authToken");
     try {
-      const response = await fetch("https://readright-server.onrender.com/books", {
+      const response = await fetch("https://read-right-8057snk87-atha2810s-projects.vercel.app/books", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
