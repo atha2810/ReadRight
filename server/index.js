@@ -3,12 +3,8 @@ const booksRouter = require("./routes/book.js");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const cors = require("cors");
-const PORT = process.env.PORT || 3000;
 const cookieParser = require("cookie-parser");
-
-// Import the middleware
 const { verifyToken, isAdmin } = require("./middleware/verifyToken");
-
 const authRoute = require("./routes/auth");
 
 dotenv.config();
@@ -25,12 +21,7 @@ app.use(cookieParser());
 app.use("/auth", authRoute);
 
 // Apply middleware to routes that need protection
-app.use("/books", booksRouter); // No need to protect /books
-
-// Apply middleware to /login route
-app.post("/auth/login", verifyToken, (req, res) => {
-  res.send("Login route protected");
-});
+app.use("/books", booksRouter);
 
 // Example of using isAdmin for admin-specific routes
 app.use("/admin-only", verifyToken, isAdmin, (req, res) => {
