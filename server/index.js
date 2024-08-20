@@ -13,7 +13,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://read-right-qsxe7kypa-atha2810s-projects.vercel.app", // Your frontend origin
+    origin: "https://read-right.vercel.app/", // Your frontend origin
     credentials: true, // Allow cookies or credentials
   })
 );
