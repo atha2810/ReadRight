@@ -9,7 +9,7 @@ function Logout({ setRoleVar }) {
 
   const handleLogout = () => {
     axios
-      .get("https://read-right-8057snk87-atha2810s-projects.vercel.app/auth/logout")
+      .get("/auth/logout")
       .then(res => {
         if (res.data.logout) {
           // Clear role from localStorage
