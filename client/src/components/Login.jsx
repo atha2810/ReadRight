@@ -13,7 +13,7 @@ function Login() {
 
   const handleSubmit = () => {
     axios
-      .post("https://readright-server.onrender.com/auth/login", { username, password })
+      .post("https://read-right-8057snk87-atha2810s-projects.vercel.app/auth/login", { username, password })
       .then(res => {
         if (res.data.user) {
           const role = res.data.role;
