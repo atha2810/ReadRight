@@ -8,7 +8,7 @@ function Navbar() {
 
   const handleLogout = () => {
     axios
-      .get("https://readright-server.onrender.com/auth/logout", { withCredentials: true }) // Include credentials with the request
+      .get("https://read-right-8057snk87-atha2810s-projects.vercel.app/auth/logout", { withCredentials: true }) // Include credentials with the request
       .then(res => {
         if (res.data.logout) {
           // Clear any client-side state if needed
