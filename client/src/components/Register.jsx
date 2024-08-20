@@ -15,7 +15,7 @@ function Register() {
   const handleSubmit = e => {
     e.preventDefault();
     axios
-      .post("https://readright-server.onrender.com/auth/register", {
+      .post("https://read-right-8057snk87-atha2810s-projects.vercel.app/auth/register", {
         username,
         email,
         password,
