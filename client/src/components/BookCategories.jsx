@@ -38,7 +38,7 @@ function BookCategories() {
 
   useEffect(() => {
     if (selectedCategory) {
-      fetch(`https://read-right-8057snk87-atha2810s-projects.vercel.app/books/category/${selectedCategory}`)
+      fetch(`/books/category/${selectedCategory}`)
         .then((response) => response.json())
         .then((data) => setBooks(data))
         .catch((error) => {
