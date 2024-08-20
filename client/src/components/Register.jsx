@@ -15,7 +15,7 @@ function Register() {
   const handleSubmit = e => {
     e.preventDefault();
     axios
-      .post("https://read-right.vercel.app/auth/register", {
+      .post("https://read-right-7znmxsbrc-atha2810s-projects.vercel.app/auth/register", {
         username,
         email,
         password,
