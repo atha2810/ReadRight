@@ -38,7 +38,7 @@ function BookCategories() {
 
   useEffect(() => {
     if (selectedCategory) {
-      fetch(`/books/category/${selectedCategory}`)
+      fetch(`https://readright-server.onrender.com/books/category/${selectedCategory}`)
         .then((response) => response.json())
         .then((data) => setBooks(data))
         .catch((error) => {
