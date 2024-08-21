@@ -11,7 +11,12 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://readright-d1jr.onrender.com", // Your frontend origin
+    credentials: true, // Allow cookies or credentials
+  })
+);
 app.use(cookieParser());
 app.use("/auth", authRoute);
 
