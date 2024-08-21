@@ -9,7 +9,7 @@ function Logout({ setRoleVar }) {
 
   const handleLogout = () => {
     axios
-      .get("/auth/logout")
+      .get("https://readright-server.onrender.com/auth/logout")
       .then(res => {
         if (res.data.logout) {
           // Clear role from localStorage
