@@ -11,10 +11,7 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
-app.use(cors({
-  origin: "https://read-right.vercel.app", // Replace with your frontend's URL
-  credentials: true,
-}));
+app.use(cors());
 app.use(cookieParser());
 app.use("/auth", authRoute);
 
