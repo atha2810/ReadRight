@@ -15,7 +15,7 @@ function Register() {
   const handleSubmit = e => {
     e.preventDefault();
     axios
-      .post("/auth/register", {
+      .post("https://readright-server.onrender.com/auth/register", {
         username,
         email,
         password,
