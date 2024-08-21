@@ -6,7 +6,7 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const { verifyToken, isAdmin } = require("./middleware/verifyToken");
 const authRoute = require("./routes/auth");
-
+const PORT = process.env.PORT || 3000;
 dotenv.config();
 
 const app = express();
